@@ -1,5 +1,4 @@
 ﻿# Linux SUID 提权
-标签（空格分隔）： linux
 - **自动化 SUID 检测脚本** - [suidcheck](https://github.com/NongCloud/oscp-Learn/blob/master/Privilege-Escalation/SUID/suidcheck.sh)
 
 - 查找 SUID 可执行文件
