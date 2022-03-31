@@ -1,4 +1,4 @@
-`cp` 和 `move` 命令的核心理念就是覆盖`/etc/passwd`或`/etc/shadow `文件，从而获取 root 权限
+`cp` 和 `mv` 命令的核心理念就是覆盖`/etc/passwd`或`/etc/shadow `文件，从而获取 root 权限
 
 使用 openssl 可以生成 linux 密码 hash：
 ```

